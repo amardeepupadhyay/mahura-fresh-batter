@@ -177,88 +177,130 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="font-heading">
-                Request a Call Back
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid gap-4">
-                  <div>
-                    <Input
-                      name="name"
-                      placeholder="Your Name *"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                      className="font-body"
-                    />
-                  </div>
-                  
-                  <div>
-                    <Input
-                      name="company"
-                      placeholder="Company (Optional)"
-                      value={formData.company}
-                      onChange={handleInputChange}
-                      className="font-body"
-                    />
-                  </div>
-                  
-                  <div>
-                    <Input
-                      name="phone"
-                      type="tel"
-                      placeholder="Phone Number *"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      required
-                      className="font-body"
-                    />
-                  </div>
-                  
-                  <div>
-                    <Input
-                      name="email"
-                      type="email"
-                      placeholder="Email (Optional)"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="font-body"
-                    />
-                  </div>
-                  
-                  <div>
-                    <Textarea
-                      name="message"
-                      placeholder="Tell us about your requirements..."
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      rows={4}
-                      className="font-body resize-none"
-                    />
-                  </div>
+          <div className="relative">
+            {/* Background decoration */}
+            <div className="absolute inset-0 bg-[var(--form-gradient)] rounded-2xl" />
+            <div className="absolute top-4 right-4 w-20 h-20 bg-primary/5 rounded-full blur-xl" />
+            <div className="absolute bottom-6 left-6 w-16 h-16 bg-secondary/5 rounded-full blur-lg" />
+            
+            <Card className="relative border-2 border-primary/10 shadow-[var(--soft-shadow)] backdrop-blur-sm">
+              <CardHeader className="text-center pb-6">
+                <div className="w-12 h-12 bg-gradient-to-r from-primary to-primary/80 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                  <Mail className="w-6 h-6 text-primary-foreground" />
                 </div>
-
-                <Button 
-                  type="submit" 
-                  variant="hero" 
-                  size="lg" 
-                  className="w-full font-heading font-semibold"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? 'Submitting...' : 'Request a Call Back'}
-                </Button>
-                
-                <p className="text-xs text-muted-foreground font-body text-center">
-                  By submitting this form, you agree to our privacy policy. 
-                  We'll only use your information to respond to your inquiry.
+                <CardTitle className="font-heading text-2xl text-foreground">
+                  Request a Call Back
+                </CardTitle>
+                <p className="text-muted-foreground font-body">
+                  Get a personalized quote within 24 hours
                 </p>
-              </form>
-            </CardContent>
-          </Card>
+              </CardHeader>
+              <CardContent>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid gap-6">
+                    <div className="space-y-2">
+                      <label className="text-sm font-body font-medium text-foreground">
+                        Your Name *
+                      </label>
+                      <Input
+                        name="name"
+                        placeholder="Enter your full name"
+                        value={formData.name}
+                        onChange={handleInputChange}
+                        required
+                        className="font-body h-12 border-2 border-border focus:border-primary/50 focus:ring-4 focus:ring-primary/10 transition-all duration-200"
+                      />
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <label className="text-sm font-body font-medium text-foreground">
+                        Company
+                      </label>
+                      <Input
+                        name="company"
+                        placeholder="Your business name (optional)"
+                        value={formData.company}
+                        onChange={handleInputChange}
+                        className="font-body h-12 border-2 border-border focus:border-primary/50 focus:ring-4 focus:ring-primary/10 transition-all duration-200"
+                      />
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <label className="text-sm font-body font-medium text-foreground">
+                        Phone Number *
+                      </label>
+                      <Input
+                        name="phone"
+                        type="tel"
+                        placeholder="+91 XXXXX XXXXX"
+                        value={formData.phone}
+                        onChange={handleInputChange}
+                        required
+                        className="font-body h-12 border-2 border-border focus:border-primary/50 focus:ring-4 focus:ring-primary/10 transition-all duration-200"
+                      />
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <label className="text-sm font-body font-medium text-foreground">
+                        Email Address
+                      </label>
+                      <Input
+                        name="email"
+                        type="email"
+                        placeholder="your.email@company.com (optional)"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        className="font-body h-12 border-2 border-border focus:border-primary/50 focus:ring-4 focus:ring-primary/10 transition-all duration-200"
+                      />
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <label className="text-sm font-body font-medium text-foreground">
+                        Requirements
+                      </label>
+                      <Textarea
+                        name="message"
+                        placeholder="Tell us about your quantity needs, delivery preferences, or any specific requirements..."
+                        value={formData.message}
+                        onChange={handleInputChange}
+                        rows={4}
+                        className="font-body resize-none border-2 border-border focus:border-primary/50 focus:ring-4 focus:ring-primary/10 transition-all duration-200"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="pt-4">
+                    <Button 
+                      type="submit" 
+                      variant="hero" 
+                      size="xl" 
+                      className="w-full font-heading font-bold shadow-[var(--soft-shadow)] hover:shadow-xl"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? (
+                        <div className="flex items-center gap-2">
+                          <div className="w-4 h-4 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />
+                          Submitting...
+                        </div>
+                      ) : (
+                        <div className="flex items-center gap-2">
+                          <Phone className="w-5 h-5" />
+                          Request a Call Back
+                        </div>
+                      )}
+                    </Button>
+                  </div>
+                  
+                  <div className="text-center pt-2">
+                    <p className="text-xs text-muted-foreground font-body">
+                      🔒 By submitting this form, you agree to our privacy policy.<br />
+                      We'll only use your information to respond to your inquiry.
+                    </p>
+                  </div>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>

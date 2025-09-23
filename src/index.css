@@ -38,11 +38,17 @@ All colors MUST be HSL.
     --ring: 166 72% 23%;
 
     /* Custom Mahura design tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(166 72% 23%), hsl(166 60% 35%));
-    --accent-gradient: linear-gradient(135deg, hsl(41 89% 51%), hsl(41 75% 60%));
+    --hero-gradient-start: 166 72% 23%; /* deep green */
+    --hero-gradient-end: 166 60% 35%; /* lighter green */
+    --accent-gradient-start: 41 89% 51%; /* turmeric */
+    --accent-gradient-end: 41 75% 60%; /* lighter turmeric */
     --soft-shadow: 0 4px 16px -4px hsl(166 72% 23% / 0.1);
     --warm-shadow: 0 4px 12px -2px hsl(41 89% 51% / 0.15);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Form enhancements */
+    --form-gradient: linear-gradient(135deg, hsl(166 72% 23% / 0.05), hsl(41 89% 51% / 0.05));
+    --input-focus-shadow: 0 0 0 3px hsl(166 72% 23% / 0.1);
 
     --radius: 0.5rem;
 
