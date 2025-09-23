@@ -38,7 +38,7 @@ const Hero = () => {
                 See Products
               </Button>
               <Button 
-                variant="cta" 
+                variant="hero" 
                 size="xl"
                 onClick={() => scrollToSection('contact')}
                 className="font-heading font-semibold"

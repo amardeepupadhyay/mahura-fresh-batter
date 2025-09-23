@@ -46,24 +46,24 @@ const Process = () => {
         <div className="hidden lg:block">
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-border -translate-y-0.5" />
+            <div className="absolute top-20 left-0 right-0 h-0.5 bg-border" />
             
             <div className="grid grid-cols-5 gap-8">
               {steps.map((step, index) => {
                 const IconComponent = step.icon;
                 return (
-                  <div key={step.title} className="relative">
+                  <div key={step.title} className="relative text-center">
                     {/* Timeline Dot */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-[var(--soft-shadow)] z-10">
+                    <div className="absolute top-20 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-[var(--soft-shadow)] z-10">
                       <IconComponent className="w-6 h-6 text-primary-foreground" />
                     </div>
                     
-                    {/* Content */}
-                    <div className="pt-20 text-center space-y-3">
+                    {/* Content - Positioned above the timeline */}
+                    <div className="space-y-3 pb-8">
                       <h3 className="text-lg font-heading font-semibold text-foreground">
                         {step.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground font-body">
+                      <p className="text-sm text-muted-foreground font-body max-w-xs mx-auto">
                         {step.description}
                       </p>
                     </div>
