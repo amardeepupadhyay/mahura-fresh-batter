@@ -51,7 +51,7 @@ const Products = () => {
   ];
 
   return (
-    <section id="products" className="py-20 bg-muted/30">
+    <section id="products" className="py-12 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">

@@ -27,8 +27,11 @@ const Mission = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-            Quality Breakfast, At Scale.
+            Our Mission
           </h2>
+          <p className="text-xl font-heading font-medium text-muted-foreground">
+            Quality Breakfast, At Scale.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">

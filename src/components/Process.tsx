@@ -34,8 +34,11 @@ const Process = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-            Clean, Safe, Consistent.
+            Our Production Process
           </h2>
+          <p className="text-xl font-heading font-medium text-muted-foreground mb-2">
+            Clean, Safe, Consistent.
+          </p>
           <p className="text-lg text-muted-foreground font-body max-w-3xl mx-auto">
             From vetted raw materials to RO-filtered water at every step, we keep it simple: 
             hygienic prep, controlled fermentation, and cold-chain dispatch. Your taste never has to compromise.
@@ -98,7 +101,7 @@ const Process = () => {
 
         {/* Compliance Note */}
         <div className="mt-16 text-center">
-          <p className="text-sm text-muted-foreground font-body bg-muted/50 rounded-lg px-6 py-4 inline-block">
+          <p className="text-sm font-body bg-accent/20 text-accent-foreground rounded-lg px-6 py-4 inline-block border border-accent/30 font-medium">
             FSSAI compliance and internal QC checks at every stage.
           </p>
         </div>

@@ -19,6 +19,9 @@ const About = () => {
                       <p className="text-xs text-muted-foreground font-body">Co-Founder</p>
                     </div>
                   </div>
+                  <div className="mt-2 text-center">
+                    <p className="text-sm font-heading font-medium text-foreground">Founder Name 1</p>
+                  </div>
                 </div>
                 
                 {/* Founder 2 */}
@@ -30,6 +33,9 @@ const About = () => {
                       </div>
                       <p className="text-xs text-muted-foreground font-body">Co-Founder</p>
                     </div>
+                  </div>
+                  <div className="mt-2 text-center">
+                    <p className="text-sm font-heading font-medium text-foreground">Founder Name 2</p>
                   </div>
                 </div>
               </div>
@@ -83,9 +89,12 @@ const About = () => {
           {/* Right - Story */}
           <div className="space-y-6">
             <div className="space-y-4">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
-                Our Story
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+                About Us
               </h2>
+              <h3 className="text-xl font-heading font-medium text-muted-foreground">
+                Our Story
+              </h3>
               
               <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                 <p>
