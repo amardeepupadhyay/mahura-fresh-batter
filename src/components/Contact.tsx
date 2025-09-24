@@ -79,8 +79,8 @@ const Contact = () => {
     },
     {
       icon: MapPin,
-      label: 'Service Area',
-      value: 'City/Region',
+      label: 'Head Office',
+      value: '1/1, 3rd STREET, MAIN ROAD, KAMARAJ NAGAR, AVADI, CHENNAI -600071',
       href: null,
     },
     {
