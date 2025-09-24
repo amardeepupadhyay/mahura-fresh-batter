@@ -68,14 +68,14 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'sales@mahura.com',
-      href: 'mailto:sales@mahura.com',
+      value: 'mavuraagrofoods@gmail.com ',
+      href: 'mailto:mavuraagrofoods@gmail.com',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91-XXXXXXXXXX',
-      href: 'tel:+91XXXXXXXXXX',
+      value: '+91-9884765787',
+      href: 'tel:+919884765787',
     },
     {
       icon: MapPin,
