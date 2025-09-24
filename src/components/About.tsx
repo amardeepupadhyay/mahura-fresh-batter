@@ -2,36 +2,79 @@ const About = () => {
   return (
     <section id="about" className="py-20">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left - Photos */}
-          <div className="space-y-6">
-            <div className="relative">
-              {/* Founder Photo Placeholder */}
-              <div className="w-full aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl flex items-center justify-center">
-                <div className="text-center space-y-2">
-                  <div className="w-20 h-20 bg-primary/30 rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-2xl font-heading font-bold text-primary">F</span>
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Left - Founders & Timeline */}
+          <div className="space-y-8">
+            {/* Founders Photos */}
+            <div className="space-y-6">
+              <h4 className="text-lg font-heading font-semibold text-foreground">Meet Our Founders</h4>
+              <div className="grid grid-cols-2 gap-4">
+                {/* Founder 1 */}
+                <div className="relative group">
+                  <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                    <div className="text-center space-y-2">
+                      <div className="w-16 h-16 bg-primary/30 rounded-full mx-auto flex items-center justify-center">
+                        <span className="text-xl font-heading font-bold text-primary">A</span>
+                      </div>
+                      <p className="text-xs text-muted-foreground font-body">Co-Founder</p>
+                    </div>
                   </div>
-                  <p className="text-sm text-muted-foreground font-body">Founder Photo</p>
+                </div>
+                
+                {/* Founder 2 */}
+                <div className="relative group">
+                  <div className="aspect-square bg-gradient-to-br from-secondary/20 to-primary/20 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                    <div className="text-center space-y-2">
+                      <div className="w-16 h-16 bg-secondary/30 rounded-full mx-auto flex items-center justify-center">
+                        <span className="text-xl font-heading font-bold text-secondary">B</span>
+                      </div>
+                      <p className="text-xs text-muted-foreground font-body">Co-Founder</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             
-            {/* Timeline */}
-            <div className="space-y-3">
+            {/* Beautiful Vertical Timeline */}
+            <div className="space-y-4">
               <h4 className="text-lg font-heading font-semibold text-foreground">Our Journey</h4>
-              <div className="space-y-2 text-sm font-body text-muted-foreground">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span>Founded 2025</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-secondary rounded-full" />
-                  <span>First 100 B2B clients</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span>City-wide distribution</span>
+              <div className="relative pl-8">
+                {/* Timeline line */}
+                <div className="absolute left-3 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-primary opacity-30"></div>
+                
+                {/* Timeline items */}
+                <div className="space-y-6">
+                  <div className="relative">
+                    <div className="absolute -left-[1.375rem] w-3 h-3 bg-primary rounded-full border-2 border-background shadow-sm"></div>
+                    <div className="space-y-1">
+                      <div className="text-sm font-heading font-semibold text-foreground">Founded 2025</div>
+                      <div className="text-xs text-muted-foreground font-body">Started with a vision for better breakfast solutions</div>
+                    </div>
+                  </div>
+                  
+                  <div className="relative">
+                    <div className="absolute -left-[1.375rem] w-3 h-3 bg-secondary rounded-full border-2 border-background shadow-sm"></div>
+                    <div className="space-y-1">
+                      <div className="text-sm font-heading font-semibold text-foreground">First 100 B2B clients</div>
+                      <div className="text-xs text-muted-foreground font-body">Built trust with local restaurants and retailers</div>
+                    </div>
+                  </div>
+                  
+                  <div className="relative">
+                    <div className="absolute -left-[1.375rem] w-3 h-3 bg-primary rounded-full border-2 border-background shadow-sm"></div>
+                    <div className="space-y-1">
+                      <div className="text-sm font-heading font-semibold text-foreground">City-wide distribution</div>
+                      <div className="text-xs text-muted-foreground font-body">Expanding reach across the entire metropolitan area</div>
+                    </div>
+                  </div>
+                  
+                  <div className="relative">
+                    <div className="absolute -left-[1.375rem] w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full border-2 border-background shadow-sm animate-pulse"></div>
+                    <div className="space-y-1">
+                      <div className="text-sm font-heading font-semibold text-foreground">What's Next</div>
+                      <div className="text-xs text-muted-foreground font-body">Regional expansion and new product lines</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
