@@ -53,15 +53,15 @@ const Footer = () => {
             <div className="space-y-3 text-sm font-body">
               <div className="flex items-center gap-3 text-primary-foreground/80">
                 <Mail className="w-4 h-4" />
-                <span>info@mavura.com</span>
+                <span>mavuraagrofoods@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-primary-foreground/80">
                 <Phone className="w-4 h-4" />
-                <span>+91 XXX XXX XXXX</span>
+                <span>+91 988 476 5787</span>
               </div>
               <div className="flex items-start gap-3 text-primary-foreground/80">
                 <MapPin className="w-4 h-4 mt-0.5" />
-                <span>Your Location<br />City, State PIN</span>
+                <span>Your Location<br />1/1, 3rd Street, Main Road, Kamaraj Nagar, Avadi, Chennai-600071</span>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
           <p className="text-primary-foreground/80 text-sm font-body">
-            © {currentYear} Mavura AGRO FOODS PRIVATE LIMITED. All rights reserved.
+            © {currentYear} Mavura Agro Foods Private Limited. All rights reserved.
           </p>
         </div>
       </div>
