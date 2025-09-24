@@ -80,7 +80,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: 'Head Office',
-      value: '1/1, 3rd STREET, MAIN ROAD, KAMARAJ NAGAR, AVADI, CHENNAI -600071',
+      value: '1/1, 3rd Street, Main Road, Kamaraj Nagar, Avadi, Chennai-600071',
       href: null,
     },
     {
