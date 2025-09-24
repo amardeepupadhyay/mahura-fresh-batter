@@ -17,7 +17,7 @@ const Products = () => {
   const products = [
     {
       name: 'Idli Batter',
-      description: 'Soft, fluffy idlis every time.',
+      description: 'Our Idli Batter is crafted using a traditional recipe, ensuring a light and fluffy texture. Perfect for making soft, spongy idlis that melt in your mouth.',
       image: idliBatter,
       highlights: [
         { text: 'Stone-ground feel', icon: Wheat },
@@ -28,7 +28,7 @@ const Products = () => {
     },
     {
       name: 'Dosa Batter',
-      description: 'Crisp, golden dosas with balanced tang.',
+      description: 'Our Dosa Batter is expertly blended to achieve the ideal consistency for crispy, golden-brown dosas. Enjoy the authentic taste of South Indian cuisine at home.',
       image: dosaBatter,
       highlights: [
         { text: 'Spreads evenly', icon: CircleDot },
@@ -39,7 +39,7 @@ const Products = () => {
     },
     {
       name: 'Uthappam Batter',
-      description: 'Thick base that loves toppings.',
+      description: 'Our Uthappam Batter is specially formulated to create thick, soft, and flavorful uthappams. Ideal for a hearty and satisfying meal.',
       image: uthappamBatter,
       highlights: [
         { text: 'Holds structure', icon: Building },
