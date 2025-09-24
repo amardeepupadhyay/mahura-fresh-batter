@@ -5,16 +5,16 @@ const Mission = () => {
     {
       icon: Expand,
       title: 'Expand Access',
-      description: 'We're committed to making our delicious, nutritious breakfast
+      description: "We're committed to making our delicious, nutritious breakfast
               options available to more families across the country, ensuring
-              everyone can enjoy a great start to their day.',
+              everyone can enjoy a great start to their day.",
     },
     {
       icon: Users,
       title: 'Support Working Families',
-      description: 'We understand the challenges of balancing work and family. Our
+      description: "We understand the challenges of balancing work and family. Our
               products are designed to simplify meal prep, giving you more
-              quality time with your loved ones.',
+              quality time with your loved ones.",
     },
     {
       icon: Handshake,
