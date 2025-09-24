@@ -101,7 +101,7 @@ const Process = () => {
 
         {/* Compliance Note */}
         <div className="mt-16 text-center">
-          <p className="text-sm font-body bg-accent/20 text-accent-foreground rounded-lg px-6 py-4 inline-block border border-accent/30 font-medium">
+          <p className="text-lg md:text-xl text-muted-foreground font-body leading-relaxed">
             FSSAI compliance and internal QC checks at every stage.
           </p>
         </div>
