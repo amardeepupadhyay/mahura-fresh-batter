@@ -106,7 +106,7 @@ const Contact = () => {
     },
     {
       question: 'How should we store the batter?',
-      answer: 'The batter must be kept refrigerated at all times (below 4°C / 40°F) to maintain freshness.',
+      answer: 'Refrigerated at 2–6°C in the original packaging. Do not freeze for best taste and texture results. Always keep sealed when not in use.',
     },
   ];
 

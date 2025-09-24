@@ -5,23 +5,17 @@ const Mission = () => {
     {
       icon: Expand,
       title: 'Expand Access',
-      description: `We're committed to making our delicious, nutritious breakfast
-options available to more families across the country, ensuring
-everyone can enjoy a great start to their day.`,
+      description: 'Bring fresh batter to more localities.',
     },
     {
       icon: Users,
       title: 'Support Working Families',
-      description: `We understand the challenges of balancing work and family. Our
-products are designed to simplify meal prep, giving you more
-quality time with your loved ones.`,
+      description: 'Ready-to-cook, reliable nutrition.',
     },
     {
       icon: Handshake,
       title: 'Enable Partners',
-      description: `We collaborate with local businesses and suppliers, fostering
-strong partnerships that contribute to the growth and success of
-our communities.`,
+      description: 'Consistent supply for retailers & kitchens.',
     },
   ];
 
