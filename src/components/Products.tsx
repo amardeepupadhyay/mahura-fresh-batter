@@ -66,7 +66,7 @@ const Products = () => {
           {products.map((product, index) => (
             <Card 
               key={product.name} 
-              className="group overflow-hidden hover:shadow-[var(--soft-shadow)] transition-all duration-500 hover:-translate-y-2 animate-fade-in border-2 border-transparent hover:border-primary/10"
+              className="group overflow-hidden hover:shadow-[var(--soft-shadow)] transition-all duration-500 hover:-translate-y-2 animate-fade-in border-2 border-transparent hover:border-primary/10 flex flex-col h-full"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="aspect-square overflow-hidden relative">
@@ -88,35 +88,37 @@ const Products = () => {
                 </p>
               </CardHeader>
 
-              <CardContent className="space-y-6">
-                {/* Highlights */}
-                <div className="space-y-3">
-                  {product.highlights.map((highlight, idx) => {
-                    const IconComponent = highlight.icon;
-                    return (
-                      <div 
-                        key={highlight.text} 
-                        className="flex items-center gap-3 text-sm font-body text-muted-foreground group-hover:text-foreground transition-colors duration-300"
-                        style={{ animationDelay: `${(index * 0.1) + (idx * 0.05)}s` }}
-                      >
-                        <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                          <IconComponent className="w-4 h-4 text-primary" />
+              <CardContent className="space-y-6 flex-1 flex flex-col">
+                <div className="flex-1 space-y-6">
+                  {/* Highlights */}
+                  <div className="space-y-3">
+                    {product.highlights.map((highlight, idx) => {
+                      const IconComponent = highlight.icon;
+                      return (
+                        <div 
+                          key={highlight.text} 
+                          className="flex items-center gap-3 text-sm font-body text-muted-foreground group-hover:text-foreground transition-colors duration-300"
+                          style={{ animationDelay: `${(index * 0.1) + (idx * 0.05)}s` }}
+                        >
+                          <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                            <IconComponent className="w-4 h-4 text-primary" />
+                          </div>
+                          <span className="flex-1">{highlight.text}</span>
                         </div>
-                        <span className="flex-1">{highlight.text}</span>
-                      </div>
-                    );
-                  })}
-                </div>
+                      );
+                    })}
+                  </div>
 
-                {/* Sizes */}
-                <div className="space-y-3">
-                  <p className="text-sm font-body font-medium text-foreground">Available Sizes:</p>
-                  <div className="flex flex-wrap gap-2">
-                    {product.sizes.map((size) => (
-                      <Badge key={size} variant="outline" className="text-xs hover:bg-primary/5 transition-colors">
-                        {size}
-                      </Badge>
-                    ))}
+                  {/* Sizes */}
+                  <div className="space-y-3">
+                    <p className="text-sm font-body font-medium text-foreground">Available Sizes:</p>
+                    <div className="flex flex-wrap gap-2">
+                      {product.sizes.map((size) => (
+                        <Badge key={size} variant="outline" className="text-xs hover:bg-primary/5 transition-colors">
+                          {size}
+                        </Badge>
+                      ))}
+                    </div>
                   </div>
                 </div>
 

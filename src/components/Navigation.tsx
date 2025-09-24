@@ -61,7 +61,7 @@ const Navigation = () => {
             onClick={() => scrollToSection('hero')}
             className="text-2xl font-heading font-bold text-primary hover:text-primary/80 transition-colors"
           >
-            Mahura
+            MAVURA
           </button>
 
           {/* Navigation Menu */}

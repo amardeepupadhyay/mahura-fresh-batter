@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Mahura Brand Colors */
+    /* MAVURA Brand Colors */
     --background: 45 100% 99%; /* #FFFDF8 off-white */
     --foreground: 0 0% 12%; /* #1E1E1E dark text */
 
@@ -37,7 +37,7 @@ All colors MUST be HSL.
     --input: 45 30% 90%;
     --ring: 166 72% 23%;
 
-    /* Custom Mahura design tokens */
+    /* Custom MAVURA design tokens */
     --hero-gradient-start: 166 72% 23%; /* deep green */
     --hero-gradient-end: 166 60% 35%; /* lighter green */
     --accent-gradient-start: 41 89% 51%; /* turmeric */

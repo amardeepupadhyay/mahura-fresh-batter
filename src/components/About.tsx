@@ -89,7 +89,7 @@ const About = () => {
               
               <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                 <p>
-                  Mahura began with a family recipe and a simple promise: better breakfasts, less effort.
+                  MAVURA began with a family recipe and a simple promise: better breakfasts, less effort.
                 </p>
                 
                 <p>

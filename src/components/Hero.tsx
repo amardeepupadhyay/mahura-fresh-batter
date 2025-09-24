@@ -66,7 +66,7 @@ const Hero = () => {
             <div className="relative z-10">
               <img
                 src={heroProducts}
-                alt="Mahura idli and dosa batter products with traditional clay pots and modern packaging"
+                alt="MAVURA idli and dosa batter products with traditional clay pots and modern packaging"
                 className="w-full h-auto rounded-2xl shadow-[var(--soft-shadow)]"
                 loading="eager"
               />
