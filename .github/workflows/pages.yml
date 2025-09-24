@@ -1,4 +1,5 @@
 name: Deploy to GitHub Pages
+
 on:
   push:
     branches: [ main ]
@@ -8,19 +9,33 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      # Use npm because package-lock.json is present
       - run: npm ci
       - run: npm run build
+
+      # 🔑 SPA fallback for GitHub Pages (copy index.html to 404.html)
+      - name: Add SPA fallback
+        run: cp dist/index.html dist/404.html
+
+      # Publish the Vite build output
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist   # change to ./build if that's your output folder
+          path: ./dist
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
